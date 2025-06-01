@@ -31,7 +31,7 @@ function App() {
     });
   };
 
-  function displayText(): string {
+  function displayAgeStatus(): string {
     const roundedDays = Math.round(yourAge?.days as number);
 
     console.log(roundedDays);
@@ -67,7 +67,7 @@ function App() {
 
         {yourAge && (
           <p className="mt-4 text-center text-balance text-lg ">
-            {displayText()}
+            {displayAgeStatus()}
           </p>
         )}
       </form>
